@@ -4,7 +4,7 @@
 
 This is an IRC bot for the ATmega328 and a PCB ENC28J60 ethernet module using [EtherCard](https://github.com/jcw/ethercard) library.
 
-Thanks to [EtherCard](https://github.com/jcw/ethercard) the sketch uses only around 37% of storage and around 50% of dynamic memory on the ATmega328 when disabling debugging output. Storage usage is around ~11,500 bytes which means it leaves enough room to add and program for more components and let your control them remotely over IRC. Memory usage is around ~1,000 bytes.
+Thanks to [EtherCard](https://github.com/jcw/ethercard) the sketch uses only around 37% of storage and around 50% of dynamic memory on the ATmega328 when disabling debugging output. Storage usage is around ~11,500 bytes which means it leaves enough room to add and program for more components and let you control them remotely over IRC. Memory usage is around ~1,000 bytes.
 
 In order to make this work properly you will have to add a couple lines of code in tcpip.cpp and EtherCard.h, the reason being I couldn't find another way to properly send multiple TCP requests while having persistTcpConnection set to true.
 
