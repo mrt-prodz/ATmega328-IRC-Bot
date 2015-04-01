@@ -116,7 +116,7 @@ static bool run_command(char* whois, char* chan, char* cmd, char* param = 0) {
   // commands without parameter
   // show available commands
   if (!memcmp("help", cmd, 4)) {
-    send(PSTR("PRIVMSG $S :custom commands: auth, free, raw, uptime\r\n"), chan);
+    send(PSTR("PRIVMSG $S :custom commands: auth, free, raw, say, uptime\r\n"), chan);
     return true;
   }
   // show available memory
@@ -141,7 +141,7 @@ static bool run_command(char* whois, char* chan, char* cmd, char* param = 0) {
     return true;
   }
   // example of how to implement a command with a parameter
-  if (!memcmp("slap", cmd, 4)) {
+  if (!memcmp("say", cmd, 3)) {
     send(PSTR("PRIVMSG $S :$S\r\n"), chan, param);
     return true;
   }
