@@ -1,6 +1,6 @@
-#ATmega328 IRC Bot (Arduino Nano)
+# ATmega328 IRC Bot (Arduino Nano)
  
-####IRC Bot made for the ATmega328 and PCB ENC28J60 ethernet module
+#### IRC Bot made for the ATmega328 and PCB ENC28J60 ethernet module
 
 This is an IRC bot for the ATmega328 and a PCB ENC28J60 ethernet module using [EtherCard](https://github.com/jcw/ethercard) library.
 
@@ -31,7 +31,7 @@ SSL is not supported.
 
 Developed and tested with an Arduino Nano and a PCB ENC28J60 ethernet module.
 
-##Features:
+## Features:
 * connect over IRC
 * control your ATmega328 remotely by sending commands
 * DHCP or static IP method for your module
@@ -44,13 +44,13 @@ Developed and tested with an Arduino Nano and a PCB ENC28J60 ethernet module.
 
 This is a project for the ATmega328 and ENC28J60.
 
-##TODO:
+## TODO:
 * Reconnect to server if connection is lost
 
-##Screenshot:
+## Screenshot:
 ![IRC screenshot](https://raw.githubusercontent.com/mrt-prodz/ATmega328-IRC-Bot/master/screenshot.jpg)
 
-##References:
+## References:
 [EtherCard](https://github.com/jcw/ethercard)
 
 [AVR-libc](http://www.nongnu.org/avr-libc/user-manual/modules.html)
